@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sai charan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:400,700" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Portfolio.</a>
+            <ul>
+                <li class="hideonmobile"><a href="#home">Home</a></li>
+                <li><a class="hideonmobile" href="#about">About</a></li>
+                <li><a class="hideonmobile" href="#service">Service</a></li>
+                <li><a class="hideonmobile" href="#contact">Contact</a></li>
+                <li class="menubtn" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+    </nav>
+    <nav id="hidden-nav">
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </div>
+    </nav>
+    <div class="bar-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+<!-- home section -->
+    <section class="home animate" id="home">
+        <div class="home-info">
+            <h1>SAI CHARAN RAMAVATH</h1>
+            <h2>I'm a 
+                <span1 style="--i:4" data-text="ENGINEER">ENGINEER</span1>
+                <span1 style="--i:3" data-text="FRONTEND DEVELOPER">FRONTEND DEVELOPER</span1>
+                <span1 style="--i:2" data-text="YOUTUBER">YOUTUBER</span1>
+                <span1 style="--i:1" data-text="SPORTS PERSON">SPORTS PERSON</span1>
+            </h2>
+            <p></p>
+            <div class="btn-sci">
+                <a href="CVsaicharan.pdf">
+                    <button class="btn">See Resume</button>
+                </a>
+                <div class="sci">
+                    <a href="https://github.com/saicharan1853/charan.git"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/saicharan-ramavath-b48471290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="cutout.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section class="about animate" id="about">
+    <div class="about-box">
+        <h1><span>About Me</span></h1>
+        <p>I am a third-year B.Tech student specializing in Computer Science and Engineering at VNIT, Nagpur, with a CGPA of 7.03 and strong foundational skills in programming and development.</p>
+        <h2><span>Skills</span></h2>
+        <div class="skills-content">
+            <div class="column">
+                <p>These are some of the few top skills that I acquired by self-learning and during my Bachelor’s Degree.</p>
+            </div>
+            <div class="right">
+            <div class="cleft">
+                <div class="bars">
+                    <div class="info"><span>C/C++</span><span>85%</span></div>
+                    <div class="line python"></div>
+                </div>
+                <div class="bars">
+                    <div class="info"><span>Phython</span><span>75%</span></div>
+                    <div class="line java"></div>
+                </div>
+                <div class="bars">
+                    <div class="info"><span>Data Science</span><span>70%</span></div>
+                    <div class="line ds"></div>
+                </div>
+                <div class="bars">
+                    <div class="info"><span>React</span><span>60%</span></div>
+                    <div class="line r"></div>
+                </div>
+            </div>
+            <div class="cright">
+                <div class="bars">
+                    <div class="info"><span>SQL</span><span>70%</span></div>
+                    <div class="line sql"></div>
+                </div>
+                <div class="bars">
+                    <div class="info"><span>Machine Learning</span><span>70%</span></div>
+                    <div class="line ml"></div>
+                </div>
+                <div class="bars">
+                    <div class="info"><span>HMTL/CSSS/JavaScript</span><span>60%</span></div>
+                    <div class="line js"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!-- service section -->
+
+    <section class="service animate" id="service">
+        <h1 class="header"><span>Services</span></h1>
+        <div class="services-container">
+        <div class="box">
+            <h1><span>Step Counting Application</span></h1>
+            <p>A Step Counting Application using Linked List and AVL tree structures in C, enabling users to track their progress, set goals, and participate in leaderboards.
+            </p>
+            <img src="https://play-lh.googleusercontent.com/x3NOGZ3oPTZZAIbT1KxaJFubC8hFkjtJPe37Q0s1Fnn2pnvOLYiuYjem6dFobtU5m9g" alt="image1">
+        </div>
+        <div class="box">
+            <h1><span> Heap Management Project</span></h1>
+            <p>My Heap Management Project features an effective memory allocation strategy utilizing C's first-fit algorithm. In web development.
+            </p>
+            <img src="https://www.researchgate.net/profile/Andrew-Brown-51/publication/3351659/figure/fig4/AS:447481705177091@1483699360062/Heap-management-data-structures.png" alt="image2">
+        </div>
+        <div class="box">
+            <h1><span>Responsive Page Layout</span></h1>
+            <p>I specialize in responsive design, demonstrated by my Responsive Page Layout project, adaptable for both desktop and mobile platforms.
+            </p>
+            <img src="https://th.bing.com/th/id/R.263f49e84fc239314a5158e228ba2bbf?rik=8jzyRJ7CiTGJrw&riu=http%3a%2f%2finfinitumdigital.com%2fwp-content%2fuploads%2f2015%2f07%2fshutterstock_122664079.jpg&ehk=%2bRrAWTY4rotaQqUvIOTAkuYFKVZ%2b1v1Zhr3rwd3iSDM%3d&risl=&pid=ImgRaw&r=0" alt="image3">
+        </div>
+    </div>
+    </section>
+<!-- contact section -->
+    <section class="contact animate" id="contact">
+        <h1 class="header"><span>Contact</span></h1>
+        <form action="#">
+            <div class="input-box">
+                <span>Full Name</span>
+                <input type="text" placeholder="Enter Your Full Name ">
+            </div>
+            <div class="input-box">
+                <span>Email</span>
+                <input type="email" placeholder="Enter Your Email ">
+            </div>
+            <div class="input-box">
+                <span>Your Massage</span>
+                <input type="text" placeholder="Enter Your Massage">
+            </div>
+
+            <div class="btn">Submit</div>
+        </form>
+    </section>
+
+ <!-- footer -->
+<footer>
+    <div class="col-left">
+        <div class="col-box">
+            <i class='bx bxs-location-plus'></i><span>1234mapad,dwedwdw</span>
+        </div>
+        <div class="col-box">
+            <i class='bx bxs-phone'></i><span>1234567890</span>
+        </div>
+        <div class="col-box">
+            <i class='bx bxl-gmail' ></i> <span> sxbhdywgu@gmail.com</span>
+        </div>
+
+    </div>
+    <div class="col-right">
+        <span>About My Services</span>
+        <p>I specialize in creating practical, efficient solutions in software development and web design, leveraging my skills in programming, data structures, and responsive design.</p>
+        <div class="social-icons">
+            <span>
+                <a href="https://www.instagram.com/saicharan_kanna/profilecard/?igsh=MWRzbjJkZ2k3dXVpYw=="><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.instagram.com/saicharan_kanna/profilecard/?igsh=MWRzbjJkZ2k3dXVpYw=="><i class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.linkedin.com/in/saicharan-ramavath-b48471290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://x.com/saicharanram?t=p6fQYg4f0ZrkxosiTzKD4g&s=09"><i class='bx bxl-twitter' ></i></a>
+            </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
